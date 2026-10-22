@@ -1,9 +1,12 @@
 [project]
 name = "shm-of-offshore-structures"
 version = "0.1.0"
-description = "Add your description here"
+description = "Repository containing notebooks for SHM of Offshore Structures course"
 readme = "README.md"
 requires-python = ">=3.12"
+authors = [
+    { name = "Ahmed Mujtaba", email = "ahmed.mujtaba@vub.be" }
+]
 dependencies = [
     "dotenv>=0.9.9",
     "ipykernel>=7.4.0",
