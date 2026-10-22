@@ -3,3 +3,6 @@
 .vscode/
 .ipynb_checkpoints/
 Notebooks/.env
+.python-version
+.binder
+Notebooks/.ipynb_checkpoints

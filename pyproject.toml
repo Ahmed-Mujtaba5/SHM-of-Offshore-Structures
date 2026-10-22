@@ -1,0 +1,15 @@
+[project]
+name = "shm-of-offshore-structures"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dotenv>=0.9.9",
+    "ipykernel>=7.4.0",
+    "owimetadatabase-preprocessor>=0.10.7",
+    "py-fatigue>=2.1.1",
+    "pyarrow>=26.0.0",
+    "seaborn>=0.13.2",
+    "tqdm>=4.70.1",
+]
