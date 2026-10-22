@@ -16,58 +16,44 @@ The notebook provides hands-on examples to help participants:
 
 This repository is intended for users interested in **offshore wind turbine structural health monitoring and fatigue analysis**, offering a practical introduction to combining experimental data with database-driven structural insights.
 
-The workshop notebook can be opened on Binder 
+### Dependency management with uv
 
-## 🧩 Running on Binder
+This repository uses [uv](https://docs.astral.sh/uv/) to manage Python dependencies:
 
-You can explore and run each notebook interactively using **Binder**, without installing anything locally.  
-Each Binder link below will launch **classic Jupyter Notebook interface** in your browser and automatically open the corresponding notebook.
-
-> 💡 It may take a few minutes for Binder to start the first time (it’s building the environment).  
-> Once the environment is ready, notebooks will load instantly on subsequent launches.
-
----
-
-### **1️⃣ Geometry & Resistance Metadata Exploration**
-
-This notebook introduces the OWI Meta Database geometry and resistance parameters.
-
-[![Launch Geometry & Resistance Notebook](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/OWI-Lab/SHM-of-Offshore-Structures/main?filepath=Notebooks/1.Geometry_Resistance_OWIMetaDataBase.ipynb)
-
----
-
-### **2️⃣ Load Processing**
-
-This notebook covers preprocessing and conditioning of SCADA or simulation load data for fatigue analysis.
-
-[![Launch Load Processing Notebook](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/OWI-Lab/SHM-of-Offshore-Structures/main?filepath=Notebooks/2.Load_Processing.ipynb)
+```bash
+uv sync
+uv run jupyter lab
+```
 
 
----
+## Working on the Workshop
 
-### **3️⃣ Fatigue Assessment**
+There are two main ways to use the workshop materials:
 
-This notebook performs the fatigue analysis using processed load data and stress cycle counting.
+- **GitHub Codespaces (recommended during the workshop):** Launch a ready-to-use development environment in your browser, configured through the repository's `.devcontainer` configuration.
+- **Local installation:** Clone the repository and set up the development environment on your own machine.
 
-[![Launch Fatigue Assessment Notebook](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/OWI-Lab/SHM-of-Offshore-Structures/main?filepath=Notebooks/3.Fatigue_Assessment.ipynb)
 
 
----
+### Option 1: GitHub Codespaces
 
-### 🧠 Notes
+1. Open this repository on GitHub.
+2. Click the **Code** button.
+3. Select the **Codespaces** tab.
+4. Click **Create codespace on main**.
+5. Wait for the development environment to build and initialize.
+6. Open the relevant workshop notebook and run the cells interactively.
 
-- All three notebooks share the same environment defined in `.binder/environment.yml`.  
-- Data files (`.pkl`, `.gz`, etc.) stored in the `Notebooks/` folder are automatically available when launched on Binder.  
-- You can also download the notebooks and run them locally if you prefer.
+The Codespace uses the configuration defined in `.devcontainer`. The initial setup may take a few minutes.
 
----
+> **Note:** Your Codespace runs in a cloud-hosted environment. Commit and push any changes you want to preserve in the repository.
 
-### ✅ Quick Reference
+### Option 2: Local Installation
 
-| Notebook | Purpose | Binder Link |
-|-----------|----------|--------------|
-| 1️⃣ 1.Geometry_Resistance_OWIMetaDataBase.ipynb | Explore geometry & resistance metadata | [Open](https://mybinder.org/v2/gh/OWI-Lab/SHM-of-Offshore-Structures/main?filepath=Notebooks/1.Geometry_Resistance_OWIMetaDataBase.ipynb) |
-| 2️⃣ 2.Load_Processing.ipynb | Process SCADA/load data | [Open](https://mybinder.org/v2/gh/OWI-Lab/SHM-of-Offshore-Structures/main?filepath=Notebooks/2.Load_Processing.ipynb) |
-| 3️⃣ 3.Fatigue_Assessment.ipynb | Perform fatigue analysis | [Open](https://mybinder.org/v2/gh/OWI-Lab/SHM-of-Offshore-Structures/main?filepath=Notebooks/3.Fatigue_Assessment.ipynb) |
+Clone the repository:
 
----
+```bash
+git clone https://github.com/OWI-Lab/SHM-of-Offshore-Structures.git
+cd SHM-of-Offshore-Structures
+```
+
