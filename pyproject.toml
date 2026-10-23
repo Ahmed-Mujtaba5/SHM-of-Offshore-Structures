@@ -12,6 +12,7 @@ dependencies = [
     "ipykernel>=7.4.0",
     "nbformat>=5.11.1",
     "owimetadatabase-preprocessor>=0.10.7",
+    "pandas>=2.2.3",
     "py-fatigue>=2.1.1",
     "pyarrow>=26.0.0",
     "pytz>=2026.5",
